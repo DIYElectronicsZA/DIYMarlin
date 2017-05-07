@@ -652,8 +652,8 @@
  * Example: `M851 Z-5` with a CLEARANCE of 4  =>  9mm from bed to nozzle.
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
-#define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
-#define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
+#define Z_CLEARANCE_DEPLOY_PROBE   5 // Z Clearance for Deploy/Stow
+#define Z_CLEARANCE_BETWEEN_PROBES  3 // Z Clearance between probe points
 
 // For M851 give a range for adjusting the Z probe offset
 #define Z_PROBE_OFFSET_RANGE_MIN -20
@@ -718,9 +718,9 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 250
-#define Y_MAX_POS 270
-#define Z_MAX_POS 200
+#define X_MAX_POS 240
+#define Y_MAX_POS 260
+#define Z_MAX_POS 190
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
 #define MIN_SOFTWARE_ENDSTOPS
@@ -858,11 +858,11 @@
   //========================= Unified Bed Leveling ============================
   //===========================================================================
 
-  #define UBL_MESH_INSET 1          // Mesh inset margin on print area
+  #define UBL_MESH_INSET 10          // Mesh inset margin on print area
   #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
   #define UBL_PROBE_PT_1_X 20       // These set the probe locations for when UBL does a 3-Point leveling
-  #define UBL_PROBE_PT_1_Y 250      // of the mesh.
+  #define UBL_PROBE_PT_1_Y 230      // of the mesh.
   #define UBL_PROBE_PT_2_X 20
   #define UBL_PROBE_PT_2_Y 40
   #define UBL_PROBE_PT_3_X 200
